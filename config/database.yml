@@ -1,0 +1,21 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  host: db
+  username: postgres
+  password: password
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+
+development:
+  <<: *default
+  database: marvel_app_development
+
+test:
+  <<: *default
+  database: marvel_app_test
+
+production:
+  <<: *default
+  database: marvel_app_production
+  username: marvel_app
+  password: <%= ENV["MARVEL_APP_DATABASE_PASSWORD"] %>
