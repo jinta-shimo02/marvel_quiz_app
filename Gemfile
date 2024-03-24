@@ -18,6 +18,8 @@ gem "bootsnap", require: false
 
 gem "cssbundling-rails"
 gem "jsbundling-rails"
+gem "rails-i18n"
+gem "dotenv-rails"
 
 group :development, :test do
   gem "debug", platforms: %i[ mri mingw x64_mingw ]
@@ -25,4 +27,12 @@ end
 
 group :development do
   gem "web-console"
+end
+
+group :test do
+  gem "capybara"
+  gem "selenium-webdriver"
+  gem "webdrivers"
+  gem "rspec-rails"
+  gem "factory_bot_rails"
 end
