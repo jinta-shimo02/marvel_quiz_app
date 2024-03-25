@@ -1,0 +1,25 @@
+<div class="navbar bg-black">
+  <div class="navbar-start">
+    <div class="dropdown">
+      <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
+        <i class="fa-solid fa-bars text-xl text-white hover:text-gray-500"></i>
+      </div>
+      <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-black rounded-box w-52">
+        <li class="text-white hover:text-gray-500"><a>Character</a></li>
+        <li class="text-white hover:text-gray-500"><a>Story</a></li>
+        <li class="text-white hover:text-gray-500"><a>Title</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="navbar-center">
+    <div class="bg-red-600">
+      <p class="text-xl text-white p-3">MARVEL QUIZ</p>
+    </div>
+  </div>
+  <div class="navbar-end">
+      <%= link_to "#", class: "flex justifh-center items-center h-full text-white hover:text-gray-500" do %>
+        <p class="pr-3">Sign Up</p>
+        <i class="fa-solid fa-right-to-bracket pr-3"></i>
+      <% end %>
+  </div>
+</div>
